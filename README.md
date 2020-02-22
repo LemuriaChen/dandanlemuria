@@ -15,6 +15,17 @@ pip install dandanlemuria
 
 要使用自动翻译功能，需要先在百度翻译网站上注册个人开发者账号，点击[这里](https://api.fanyi.baidu.com/)注册。
 
+**常用语言代码**
+
+代码 | 名称 |
+:-: | :-: |
+zh | 中文 |
+en | 英文 |
+yue | 粤语 | 
+wyw | 文言文 |
+jp | 日文 |
+fra | 法语 |
+
 ```python
 import dandanlemuria as ddl
 
