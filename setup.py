@@ -3,27 +3,13 @@ import setuptools
 
 
 long_description = """
-dandanlemuria
-=====
 自然语言处理小工具
-完整文档见 ``README.md``
-GitHub: https://github.com/LemuriaChen/dandanlemuria
-
-功能
-====
--  支持单词缩写功能
--  支持单词翻译功能
--  MIT 授权协议
-
-安装说明
-========
--  ``pip install dandanlemuria``
 """
 
 
 setuptools.setup(
     name='dandanlemuria',
-    version='0.42.1',
+    version='0.0.1',
     description='A toolkit for natural language processing',
     long_description=long_description,
     author='dandanlemuria',

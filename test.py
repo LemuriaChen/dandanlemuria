@@ -18,3 +18,19 @@ trans.translate('向老板汇报工作时的话术', from_lang='zh', to_lang='jp
 # wyw 文言文
 # jp  日文
 # fra 法语
+
+long_description = """
+dandanlemuria
+=====
+自然语言处理小工具
+完整文档见 ``README.md``
+GitHub: https://github.com/LemuriaChen/dandanlemuria
+功能
+=====
+-  支持单词缩写功能
+-  支持单词翻译功能
+-  MIT 授权协议
+安装说明
+=====
+-  pip install ``dandanlemuria``
+"""
