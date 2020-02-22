@@ -1,14 +1,44 @@
 
 # A toolkit for natural language processing
 
+## Installation
+
+```shell script
+pip install dandanlemuria
+```
+
 ## Features
 
 ### API integration
 
 * automatic translation
+
+要使用自动翻译功能，需要先在百度翻译网站上注册个人开发者账号，点击[这里](https://api.fanyi.baidu.com/)注册。
+
+```python
+import dandanlemuria as ddl
+
+trans = ddl.Trans()
+trans.add_app_id('')
+trans.add_secret_key('')
+trans.translate('好好学习，天天向上', from_lang='zh', to_lang='en')
+```
+
 * automatic abbreviation
 
-### Service interface
+自动缩写功能整合了[allacronyms](https://www.allacronyms.com/)网站的功能，主要功能如下：
+
+    * 返回给定英文字符串的缩写
+    * 返回给定英文字符串的全称
+
+```python
+import dandanlemuria as ddl
+
+ddl.Abbrev().get_abbreviation('Translation', verbose=True, best=False)
+ddl.Abbrev().get_fullname('ABC', verbose=True)
+```
+
+### Service interface (To DO)
 
 * machine translation
 * dialogue system
