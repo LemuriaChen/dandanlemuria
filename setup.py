@@ -3,7 +3,6 @@ import setuptools
 
 
 long_description = """
-
 dandanlemuria
 =====
 自然语言处理小工具
@@ -12,9 +11,9 @@ GitHub: https://github.com/LemuriaChen/dandanlemuria
 
 功能
 ====
--  支持自定义词典
+-  支持单词缩写功能
+-  支持单词翻译功能
 -  MIT 授权协议
-在线演示： http://jiebademo.ap01.aws.af.cm/
 
 安装说明
 ========
@@ -51,3 +50,4 @@ setuptools.setup(
     keywords='NLP, toolkit',
     packages=setuptools.find_packages(),
 )
+

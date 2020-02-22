@@ -4,7 +4,7 @@ from lxml import etree
 import prettytable as pt
 
 
-class Abbrev(object):
+class Abbrev:
 
     def __init__(self):
         self.base_url = 'https://www.allacronyms.com/'
@@ -13,7 +13,7 @@ class Abbrev(object):
             'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:22.0) Gecko/20100101 Firefox/22.0'
         }
 
-    def get_abbreviation(self, query: str, verbose: bool) -> list:
+    def get_abbreviation(self, query: str, verbose: bool, best: bool) -> list:
 
         url = self.base_url + '_'.join(query.lower().split(' ')) + '/abbreviated'
 
@@ -33,7 +33,10 @@ class Abbrev(object):
             print(f'Abbreviation for \'{query}\': \n{len(items)} possible ways to abbreviate \'{query}\'.')
             print(table)
 
-        return items
+        if not best:
+            return items
+        else:
+            return items[0][1]
 
     def get_fullname(self, query: str, verbose: bool) -> list:
 
